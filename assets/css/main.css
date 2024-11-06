@@ -1,9 +1,9 @@
 .floating-btn {
   position: fixed;
   bottom: 70px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #40C250;
   display: flex;
@@ -25,7 +25,7 @@
     width: 50px;
     height: 50px;
     bottom: 85px;
-    right: 55px;
+    right: 15px;
   }
 
   .floating-btn img {
@@ -1387,7 +1387,7 @@ a.mobile-show.search-bar-icon:hover {
 
 ----------------------------------------------------------------------------- */
 .hero-bg {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1494,15 +1494,15 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.webp);
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/hero-bg-2.jpg);
+  background-image: url(../img/hero-bg-2.webp);
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-bg-3.jpg);
+  background-image: url(../img/hero-bg-3.webp);
 }
 
 .homepage-slider {
@@ -2444,21 +2444,21 @@ ul.social-link-team li a {
 
 .single-product-item h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
 p.product-price {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 525;
   margin-bottom: 15px;
 }
 
 p.product-price span {
   display: block;
   opacity: 0.8;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
 }
 
