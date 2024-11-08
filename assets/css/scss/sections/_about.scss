@@ -47,6 +47,13 @@ a.video-play-btn {
   }
 }
 
+/* Garantir visibilidade em dispositivos móveis */
+@media (max-width: 768px) {
+  .abt-bg {
+    display: block; /* Assegura que o elemento será exibido em dispositivos móveis */
+  }
+}
+
 .abt-section .abt-text {
   padding: 50px;
   padding-left: 30px;
