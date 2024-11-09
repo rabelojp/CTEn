@@ -1,3 +1,77 @@
+
+/* Banner de consentimento de cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  display: none; /* Inicia oculto */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.5s ease-in-out; /* Transição suave para exibição */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* Mensagem do banner */
+.cookie-message {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cookie-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.cookie-link {
+  color: #467DA8; /* Tom de azul secundário */
+  text-decoration: underline;
+}
+
+.cookie-link:hover {
+  color: #3c6b8b; /* Cor do link ao passar o mouse */
+}
+
+/* Botão de aceitar cookies */
+.cookie-button {
+  background-color: #467DA8; /* Cor do botão */
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cookie-button:hover {
+  background-color: #3c6b8b; /* Cor de hover para o botão */
+  transform: scale(1.05); /* Leve aumento no botão ao passar o mouse */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cookie-message {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cookie-text {
+      margin-bottom: 10px;
+      text-align: center;
+  }
+}
+
 /* player youtube */
 
 .mfp-iframe-holder .mfp-content {
@@ -11,6 +85,7 @@
   height: 100%;
 }
 
+/* botão flutuantes whatsapp */
 .floating-btn {
   position: fixed;
   bottom: 70px;

@@ -9,32 +9,34 @@
 	<!-- title -->
 	<title>CTEn Saúde</title>
 
-	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="assets/img/logo1.svg">
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-	<!-- fontawesome -->
-	<link rel="stylesheet" href="assets/css/all.min.css">
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<!-- owl carousel -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.css">
-	<!-- magnific popup -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<!-- animate css -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- mean menu css -->
-	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
-	<!-- main style -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<!-- responsive -->
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<!-- player youtube -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-	<!-- ícones -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	  
+	<head>
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/png" href="assets/img/logo1.svg">
+	
+		<!-- Preload fonts for faster rendering -->
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" as="style" />
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" as="style" />
+		
+		<!-- Preload critical CSS (e.g., Bootstrap) -->
+		<link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style">
+		
+		<!-- Preload icons (important for UI elements) -->
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style">
+	
+		<!-- Main stylesheets -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		
+		<!-- Asynchronously load non-critical CSS (to improve rendering speed) -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="assets/css/meanmenu.min.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="assets/css/responsive.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" media="print" onload="this.media='all'">
+	</head>
+	
 	  
 
 
@@ -676,6 +678,83 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+
+
+	<!-- Cookie otimização no carregamento da página -->
+    <script>
+        // Função para criar o cookie
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiração em dias
+            document.cookie = "visited=true; expires=" + expires.toUTCString() + "; path=/; SameSite=Lax";
+        }
+
+        // Função para ler o cookie
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+            return null;
+        }
+
+        // Verifica se o cookie "visited" existe
+        const visited = getCookie("visited");
+
+        if (!visited) {
+            // Se o cookie não existir, configura o cookie e faz otimização inicial
+            setCookie("visited", "true", 30);  // Expira em 30 dias
+            console.log("Primeira visita - Otimizar carregamento inicial");
+            // Carregar conteúdo ou dados adicionais para primeira visita
+        } else {
+            console.log("Bem-vindo de volta - Carregamento otimizado");
+            // Realizar otimizações para visitas subsequentes
+            // Exemplo: carregar dados da cache, não recarregar imagens grandes, etc.
+        }
+    </script>
+
+	<!-- Aviso do uso de cookies no site -->
+	<div id="cookie-consent-banner" class="cookie-banner">
+		<div class="cookie-message">
+			<p class="cookie-text">
+				Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você aceita o uso de cookies. 
+				<a href="/politica-de-cookies" target="_blank" class="cookie-link">Leia mais</a>.
+			</p>
+			<button id="accept-cookies" class="cookie-button">Aceitar</button>
+		</div>
+	</div>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Função para verificar se o usuário já aceitou os cookies
+		function checkCookieConsent() {
+			return localStorage.getItem("cookiesAccepted") === "true";
+		}
+	
+		// Função para exibir o banner
+		function showCookieBanner() {
+			const banner = document.getElementById("cookie-consent-banner");
+			if (!checkCookieConsent()) {
+				banner.style.display = "block"; // Exibe o banner
+			}
+		}
+	
+		// Função para aceitar os cookies
+		function acceptCookies() {
+			localStorage.setItem("cookiesAccepted", "true"); // Armazena a preferência do usuário
+			const banner = document.getElementById("cookie-consent-banner");
+			banner.style.display = "none"; // Oculta o banner
+		}
+	
+		// Event listener para o botão de aceitação
+		const acceptButton = document.getElementById("accept-cookies");
+		if (acceptButton) {
+			acceptButton.addEventListener("click", acceptCookies);
+		}
+	
+		// Exibe o banner quando a página carrega, se o usuário não tiver aceitado ainda
+		showCookieBanner();
+	});
+</script>
 
 </body>
 </html>
