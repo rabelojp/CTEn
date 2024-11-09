@@ -2044,7 +2044,7 @@ span.comment-date {
 }
 
 .client-meta h3 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -2058,11 +2058,12 @@ span.comment-date {
 }
 
 p.testimonial-body {
-  font-size: 20px;
+  font-size: 17px;
+  font-style: italic;
   width: 700px;
   margin: 0 auto;
   line-height: 1.8;
-  color: #414141;
+  color: #999999;
   margin-top: 20px;
 }
 
@@ -2085,14 +2086,14 @@ p.testimonial-body {
 ----------------------------------------------------------------------------- */
 a.video-play-btn {
   position: absolute;
-  background-color: #e11d07;
-  color: white;
+  background-color: #176BA4;
+  color: #051922;
   width: 90px;
   height: 90px;
   text-align: center;
   line-height: 92px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
   display: block;
   z-index: 2;
@@ -2110,6 +2111,8 @@ a.video-play-btn {
   width: 100%;
   background-size: cover;
   background-position: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -2443,14 +2446,14 @@ ul.social-link-team li a {
 }
 
 .product-image {
-  padding: 0px;
+  padding: 30px;
   padding-bottom: 0;
 }
 
 .product-image img {
-  width: 1000%;
+  width: 90%;
   border-radius: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .single-product-item h3 {
