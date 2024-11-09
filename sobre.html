@@ -199,6 +199,54 @@
 	</div>
 	<!-- end logo carousel -->
 
+	<!-- Botão flutuante -->
+	<a target="_blank" href="https://wa.me/556191927262?text=Ol%C3%A1!%20Queria%20saber%20mais%20sobre%20os%20cursos%20e%20treinamentos%20da%20CTEn Saúde.
+		"><div class="floating-btn">
+		<img src="assets/img/whatsapp.png" alt="Icon">
+	  </div></a>
+
+	  <script>
+		const mainBtn = document.getElementById('mainBtn');
+		const extraBtns = document.querySelectorAll('.extra-btn');
+		const mainIcon = document.getElementById('mainIcon');
+	  
+		let isOpen = false;
+	  
+		mainBtn.addEventListener('click', () => {
+		  if (!isOpen) {
+			// Abrir os botões extras
+			mainBtn.classList.add('x');
+			mainIcon.style.display = 'none';
+			extraBtns.forEach(btn => {
+			  btn.classList.add('show-btns');
+			  btn.classList.remove('hide-btns'); // Remover qualquer classe de esconder
+			});
+		  } else {
+			// Fechar os botões extras
+			mainBtn.classList.remove('x');
+			mainIcon.style.display = 'block';
+			extraBtns.forEach(btn => {
+			  btn.classList.remove('show-btns');
+			  btn.classList.add('hide-btns'); // Adicionar a classe de esconder
+			});
+		  }
+		  isOpen = !isOpen;
+		});
+	  </script>
+	<!-- Final do botão flutuante -->
+	
+
+	<div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 	<!-- footer -->
 	<div class="footer-area">
 		<div class="container">

@@ -278,42 +278,90 @@
 	</div>
 	<!-- end logo carousel -->
 
+	<!-- Botão flutuante -->
+	<a target="_blank" href="https://wa.me/556191927262?text=Ol%C3%A1!%20Queria%20saber%20mais%20sobre%20os%20cursos%20e%20treinamentos%20da%20CTEn Saúde.
+		"><div class="floating-btn">
+		<img src="assets/img/whatsapp.png" alt="Icon">
+	  </div></a>
+
+	  <script>
+		const mainBtn = document.getElementById('mainBtn');
+		const extraBtns = document.querySelectorAll('.extra-btn');
+		const mainIcon = document.getElementById('mainIcon');
+	  
+		let isOpen = false;
+	  
+		mainBtn.addEventListener('click', () => {
+		  if (!isOpen) {
+			// Abrir os botões extras
+			mainBtn.classList.add('x');
+			mainIcon.style.display = 'none';
+			extraBtns.forEach(btn => {
+			  btn.classList.add('show-btns');
+			  btn.classList.remove('hide-btns'); // Remover qualquer classe de esconder
+			});
+		  } else {
+			// Fechar os botões extras
+			mainBtn.classList.remove('x');
+			mainIcon.style.display = 'block';
+			extraBtns.forEach(btn => {
+			  btn.classList.remove('show-btns');
+			  btn.classList.add('hide-btns'); // Adicionar a classe de esconder
+			});
+		  }
+		  isOpen = !isOpen;
+		});
+	  </script>
+	<!-- Final do botão flutuante -->
+	
+
+	<div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 	<!-- footer -->
 	<div class="footer-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
-						<h2 class="widget-title">About us</h2>
-						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+						<h2 class="widget-title">Sobre nós</h2>
+						<p>O Centro de Treinamento e Ensino em Saúde (CTEn Saúde) nasceu para atender à crescente demanda por uma instituição de ensino especializada em emergências no atendimento pré-hospitalar. Nossa missão é suprir lacunas essenciais na formação desse setor vital da saúde, oferecendo uma abordagem inovadora e prática para o desenvolvimento de novas habilidades.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
+						<h2 class="widget-title">Entre em contato</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li><strong>Telefone: </strong>+55 (61) 99306-8577</li>
+							<li><strong>E-mail: </strong>ctensaude@gmail.com</li>
+							<li><strong>Endereço: </strong>Setor Comercial Sul (SCS), Quadra 6, Bloco A, nº 157, Sala 504 - Edifício Bandeirantes, Asa Sul, Brasília - DF</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
+						<h2 class="widget-title">Páginas</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">Página Inicial</a></li>
+							<li><a href="cursos.html">Cursos</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="equip.html">Equipe</a></li>
+							<li><a href="parceiros.html">Parceiros</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box subscribe">
-						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<h2 class="widget-title">Inscreva-se</h2>
+						<p>Assine nosso newslwtter e fique por dentro das nossas últimas atualizações.</p>
 						<form action="index.html">
 							<input type="email" placeholder="Email">
 							<button type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -330,18 +378,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
-					</p>
+					<p>Copyright &copy; <span id="current-year"></span> - <a href="#">Centro de Treinamento e Ensino em Saúde - CTEn Saúde, CNPJ 33.895.296/0001-42 MEI </a>.  Todos os direitos reservados.<br>
+						Desenvolvido por <a href="https://laact.com.br/" target="_blank">LAACT</a>
+					 </p>
+					 
+					 <script>
+						 // Script para atualizar o ano automaticamente
+						 document.getElementById("current-year").textContent = new Date().getFullYear();
+					 </script>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							<li><a href="https://www.facebook.com/CTEN.SAUDE/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/cten.saude/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/@ctensaude" target="_blank"><i class="fab fa-youtube"></i></a></li>
 						</ul>
 					</div>
 				</div>
