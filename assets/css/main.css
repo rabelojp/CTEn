@@ -539,7 +539,6 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   background-position: center center;
   position: relative;
   z-index: 1;
-  background-attachment: fixed;
   padding-top: 200px;
 }
 
