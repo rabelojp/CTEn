@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,10 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Single Product</title>
+	<title>CTEn - Primeiros Socorros</title>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="assets/img/logo1.svg">
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -30,6 +30,13 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- player youtube -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<!-- ícones -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	  
+	  
+
 
 </head>
 <body>
@@ -51,7 +58,7 @@
 						<!-- logo -->
 						<div class="site-logo">
 							<a href="index.html">
-								<img src="assets/img/logo.png" alt="">
+								<img style="width: 4rem;" src="assets/img/logo1.svg" alt="">
 							</a>
 						</div>
 						<!-- logo -->
@@ -59,48 +66,14 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
-								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
-								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
-								</li>
-								<li>
-									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-									</div>
-								</li>
+								<li><a href="index.html">Página Inicial</a></li>
+								<li><a href="cursos.html">Cursos</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="#">Equipe</a></li>
+								<li><a href="parceiros.html">Parceiros</a></li>
+								<li><a href="contato.html" class="boxed-btn">Entre em contato</a></li>
 							</ul>
 						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
@@ -109,25 +82,6 @@
 		</div>
 	</div>
 	<!-- end header -->
-
-	<!-- search area -->
-	<div class="search-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<span class="close-btn"><i class="fas fa-window-close"></i></span>
-					<div class="search-bar">
-						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
-							<button type="submit">Search <i class="fas fa-search"></i></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end search arewa -->
 	
 	<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
@@ -135,8 +89,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>See more Details</p>
-						<h1>Single Product</h1>
+						<p>Treinamento</p>
+						<h1>Primeiros Socorros</h1>
 					</div>
 				</div>
 			</div>
@@ -155,23 +109,15 @@
 				</div>
 				<div class="col-md-7">
 					<div class="single-product-content">
-						<h3>Green apples have polyphenols</h3>
-						<p class="single-product-pricing"><span>Per Kg</span> $50</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.</p>
+						<h2 class="mt-5 mb-3">Treinamento de Primeiros Socorros para Escolas</h2>
+						<p class="single-product-pricing"><span>Lei Lucas nº 13.722, de 4 de outubro de 2018</span></p>
+						<p>O curso é projetado para capacitar professores, educadores e funcionários de escolas e centros infantis a lidar com emergências de forma rápida e eficaz. <br><br> O que será abordado no curso? <br><br>&bull; Identificação de emergências; <br>&bull; Técnicas de primeiros socorros básicas; <br>&bull; Prevenção e resposta a acidentes comuns; <br>&bull; Aspectos emocionais no atendimento; <br>&bull; Simulações práticas. <br><br>O curso é ideal para professores, auxiliares de classe, cuidadores, gestores escolares, e qualquer outro profissional que atue em ambientes educativos ou com crianças. <br><br> Ao final da capacitação, os participantes estarão aptos a identificar emergências, realizar os procedimentos iniciais e tomar decisões rápidas que podem fazer a diferença entre salvar ou perder uma vida.</p>
+					
 						<div class="single-product-form">
-							<form action="index.html">
-								<input type="number" placeholder="0">
-							</form>
-							<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-							<p><strong>Categories: </strong>Fruits, Organic</p>
+							<p class="mt-3"><strong>Carga horária: </strong>04 a 20 horas </p>
+							<p class="mt-3"><strong>Investimento: </strong>a definir... </p>
+							<a href="cart.html" class="cart-btn mt-5"><i class="fas fa-shopping-cart"></i> Tenho interesse</a>
 						</div>
-						<h4>Share:</h4>
-						<ul class="product-share">
-							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href=""><i class="fab fa-twitter"></i></a></li>
-							<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-							<li><a href=""><i class="fab fa-linkedin"></i></a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -185,40 +131,59 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">	
-						<h3><span class="orange-text">Related</span> Products</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+						<h3><span class="orange-text">Outros</span> Produtos</h3>
+						<p>Descubra nosso catálogo de cursos de alta qualidade, acessíveis e repletos de inovação e tecnologia para impulsionar sua capacitação!</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-6 text-center">
+				<div class="col-lg-4 col-md-6 text-center berry">
 					<div class="single-product-item">
 						<div class="product-image">
 							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
 						</div>
-						<h3>Strawberry</h3>
-						<p class="product-price"><span>Per Kg</span> 85$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+						<div style="margin: -1rem 1rem 3rem 1rem;">
+							<h3 class="text-justify"><strong>Bleeding Control Course (BCon):</strong> Capacitação em Controle de Sangramento para Salvamento de Vidas</h3>
+							<hr>
+							<p class="text-left">O curso BCon (Bleeding Control) é fundamentado nas diretrizes do American College of Surgeons (ACS) e na mundialmente reconhecida campanha "STOP THE BLEED". Esta capacitação tem como objetivo ensinar profissionais de saúde, socorristas e até mesmo civis a identificar e responder de maneira eficiente a situações de trauma. <br>
+							<p class="text-left"><strong>Carga horária:</strong> 20 horas (02 dias de curso). <br>
+								<strong>Investimento:</strong> R$ 150,00.
+							</p>
+							<p class="product-price"><span>Certificação</span> Internacional </p>
+						</div>
+						<a href="cursos.html" class="cart-btn"><i class="bi bi-plus" style="font-size: 2rem; text-align: center;"></i></a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center">
+				<div class="col-lg-4 col-md-6 text-center strawberry">
 					<div class="single-product-item">
 						<div class="product-image">
 							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
 						</div>
-						<h3>Berry</h3>
-						<p class="product-price"><span>Per Kg</span> 70$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+						<div style="margin: -1rem 1rem 3rem 1rem;">
+							<h3 class="text-justify"><strong>Prehospital Trauma Life Support (PHTLS):</strong> Excelência no Atendimento a Vítimas de Trauma</h3>
+							<hr>
+							<p class="text-left">Baseado nas diretrizes do renomado Prehospital Trauma Life Support (PHTLS), este curso visa aprimorar a atuação dos profissionais de saúde no atendimento a vítimas de trauma. O PHTLS enfatiza o pensamento crítico como pilar fundamental, capacitando os participantes a fornecerem cuidados de alta qualidade em situações pré-hospitalares.</p>
+							<p class="text-left"><strong>Carga horária:</strong> 20 horas (02 dias de curso). <br>
+								<strong>Investimento:</strong> R$ 150,00.</p>
+						</div>
+						<p class="product-price"><span>Certificação</span> Nacional </p>
+						<a href="cursos.html" class="cart-btn"><i class="bi bi-plus" style="font-size: 2rem; text-align: center;"></i></a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 text-center">
+				<div class=" col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center strawberry">
 					<div class="single-product-item">
 						<div class="product-image">
 							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
 						</div>
-						<h3>Lemon</h3>
-						<p class="product-price"><span>Per Kg</span> 35$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+						<div style="margin: -1rem 1rem 3rem 1rem;">
+							<h3 class="text-justify"><strong>Suporte Básico de Vida (SBV/DEA):</strong> Capacitação Completa em Emergências Cardíacas e Respiratórias</h3>
+							<hr>
+							<p class="text-left">Baseado nas diretrizes da American Heart Association (AHA), este curso capacita os participantes a lidar com Parada Cardiorrespiratória (PCR) em adultos, crianças e lactentes, além de ensinar o uso de Desfibrilador Externo Automático (DEA) e técnicas para Obstrução de Vias Aéreas por Corpo Estranho (OVACE).</p>
+							<p class="text-left"><strong>Carga horária:</strong> 10 horas (01 dia de curso). <br>
+								<strong>Investimento:</strong> R$ 150,00.</p>
+						</div>
+						<p class="product-price"><span>Certificação</span> Nacional </p>
+						<a href="cursos.html" class="cart-btn"><i class="bi bi-plus" style="font-size: 2rem; text-align: center;"></i></a>
 					</div>
 				</div>
 			</div>
