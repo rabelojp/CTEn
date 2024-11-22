@@ -2158,6 +2158,14 @@ a.video-play-btn {
   padding: 110px 0px 115px;
 }
 
+.shop-banner1 {
+  position: relative;
+  background-color: #f5f5f5;
+  background-image: url(../img/2.png);
+  background-size: cover;
+  padding: 110px 0px 115px;
+}
+
 .shop-banner h3 {
   position: relative;
   font-size: 50px;
@@ -2447,20 +2455,20 @@ ul.social-link-team li a {
 }
 
 .product-image img {
-  width: 1000%;
+  width: 100%;
   border-radius: 5px;
   margin-bottom: 40px;
 }
 
 .single-product-item h3 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 p.product-price {
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 525;
   margin-bottom: 15px;
 }
